@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    text-transform: uppercase;
+    height: 40px;
+    background-color: blue;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 60.5px;
+}
+
+header nav span{
+    color: #dfddef;
+    margin: 0px 40px 20px 0px;
+}
+
+header nav span:hover{
+    color: aliceblue;
+}
+
+.title{
+    margin: 0px;
+    color: red;
+}
