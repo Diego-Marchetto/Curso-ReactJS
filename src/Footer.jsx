@@ -4,8 +4,9 @@ class Footer extends Component {
     render() {
         return (
             <>
-                <hr />
-                <p>Soy el footer</p>
+                <footer>
+                    <p>Diego Marchetto 2022</p>
+                </footer>
             </>
         )
     }

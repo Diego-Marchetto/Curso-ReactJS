@@ -1,12 +1,18 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: DIN-Next-LT-Pro,segoe ui,sans-serif;
+}
+
+body{
+    background-color: rgb(245, 245, 245);
+    width: 100%;
 }
 
 header{
     text-transform: uppercase;
     height: 40px;
-    background-color: blue;
+    background-color: #3e3e3e;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 20px;
@@ -23,14 +29,218 @@ header nav {
 
 header nav span{
     color: #dfddef;
-    margin: 0px 40px 20px 0px;
+    font-weight: bold;
 }
 
-header nav span:hover{
-    color: aliceblue;
+header nav .menu{
+    display: none;
+}
+
+header nav .MuiSvgIcon-root:hover{
+    color: #ffc81f;
+    transition: 1.5s;
+}
+
+a:-webkit-any-link{
+    text-decoration: none;
+}
+
+header nav .selectCat{
+    margin: 0px 30px 0px 30px;
+}
+
+header nav .selectCat:hover {
+    color: #ffc81f;
+    transition: 1.5s;
+}
+
+.cart{
+    width: auto;
 }
 
 .title{
     margin: 0px;
-    color: red;
+    color: #fbc827;
+}
+
+.productContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    min-width: 300px;
+    height: 350px;
+    background-color: white;
+    border: 1px solid rgba(62, 65, 65, 0.1);
+    border-radius: 4px;
+    position: relative;
+}
+
+.productContainer:hover{
+    box-shadow: 0px 3px 4px rgba(251, 200, 39, 0.5);
+    transition: 0.2s;
+}
+
+.charging{
+    font-size: 3em;
+}
+
+.productsContainer{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productAmountContainer{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.productAmountContainer .MuiSvgIcon-root{
+    margin: 0px;
+}
+
+.productAmount{
+    font-size: 24px;
+
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.info a{
+    display: flex;
+    margin-top: 5px;
+    text-decoration: none;
+    color: black;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 2px 5px 2px 5px;
+    background-color: rgb(245, 245, 245);
+}
+
+.info a .MuiSvgIcon-root{
+    margin-right: 4px;
+}
+
+.icon{
+    font-size: 12px;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.productContainer img{
+    height: 50%;
+    z-index: 0;
+}
+
+.MuiBadge-colorSecondary{
+    margin-top: 26px;
+}
+
+.nameProduct{
+    text-transform: uppercase;
+   font-weight: bold;
+}
+
+.productContainer .MuiSvgIcon-root{
+    margin: 0px;
+}
+
+/*ItemDetail*/
+
+.detailContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapperDetail{
+    background-color: white;
+    width: 50%;
+    margin: 15px 0px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid rgba(62, 65, 65, 0.2)
+}
+
+.imgContainer{
+    width: 450px;
+    height: auto;
+    margin: 10px;
+}
+
+.infoContainer{
+    width: 450px;
+    text-align: center;
+    height: auto;
+    margin: 10px;
+}
+
+.imageDetail{
+    width: 100%;
+    object-fit: cover;
+    margin: 0px;
+}
+
+.titleDetail{
+    font-weight: 200;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.desc{
+    margin: 20px 0px;
+}
+
+.price{
+    font-weight: 100;
+    font-size: 40px;
+}
+
+footer{
+    background-color: #3e3e3e;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    bottom: 0;
+    margin-top: 30px;
+}
+
+footer p{
+    padding-top: 15px;
+    color: #dfddef;
+    font-weight: bold;
+}
+
+@media (max-width: 600px){
+    header nav .selectCat{
+        display: none;
+    }
+
+    header nav .menu{
+        display: block;
+        margin-bottom: 10px;
+    }
 }
