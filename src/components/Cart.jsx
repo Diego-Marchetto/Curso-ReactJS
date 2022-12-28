@@ -48,7 +48,7 @@ const Cart = () => {
                             <p className="finallyTitle">Orden de compra</p>
                             <p className="titleTotal">Total</p>
                             <p className="finallyPrice">{formatter.format(finallyPrice())}</p>
-                            <button className="finallyButton" onClick={() => finallyBuy()}>FINALIZAR</button>
+                            <button className="finallyButton" onClick={() => finallyBuy()}>FINALIZAR COMPRA</button>
                         </div>
                     }
 

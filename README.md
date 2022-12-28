@@ -5,8 +5,7 @@
 `Proyecto Final` para el curso de ReactJS de la academia `Coder House` (2022).
 La aplicación permite conectarse con un backend realizdo con `Firebase`.
 Permite seleccionar ciertos productos, navegar a sus detalles, agregarlos al carrito, poder acceder a él, simular la compra de los productos.
-Al clickear sobre el botón "realizar compra", pide llenar un formulario con datos básicos y luego de confirmar
-se genera un id de orden para el usuario y en firebase se guarda la orden con los productos que compró.
+Al clickear sobre el botón "Finalizar Compra", se genera un Nombre, email y numero de telefono ya precodeados y se crea la orden de compra con su ID en firebase con los productos que compró.
 
 **Tecnologías y librerías:**
 
