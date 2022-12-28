@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import CartWidget from "./CartWidget";
-import { Menu } from "@material-ui/icons";
+import { Link } from 'react-router-dom';
+import CartWidget from './CartWidget';
+import { Menu } from '@material-ui/icons';
 
 
 const Navbar = () => {
@@ -17,7 +17,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className="cart">
-                    <span><CartWidget /></span>
+                    <span><Link to='/cart' style={{textDecoration: "none"}}><CartWidget /></Link></span>
                 </div>
             </nav>
         </header>

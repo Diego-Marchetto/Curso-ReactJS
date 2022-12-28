@@ -23,13 +23,15 @@ const ItemCount = ({ stock = 0, initial = 1,  onAdd }) => {
     }
     return (
         <div className="productAmountContainer">
+            <div className="responsiveCount">
             <Button variant="text" onClick={increment}><Add /></Button>
             <div className="productAmount">{count}</div>
             <Button variant="text" onClick={decrement}><Remove /></Button>
+            </div>
             {
                 stock
-                ? <Button className="buttonColor" variant="contained" color="primary" onClick={() => onAdd(count)}>Agregar al carrito</Button>
-                : <Button variant="contained" disabled>Agregar al Carrito</Button>
+                ? <button className="cartButton buttonDetailCount" onClick={() => onAdd(count)}>Agregar al carrito</button>
+                : <button className="cartButton buttonDetailCount" variant="contained" disabled>Agregar al Carrito</button>
             }
         </div>
     );
